@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haziq Danial | MyPortfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+
+<!-- My CSS File -->
+<link rel="stylesheet" href="styles.css">
+<li><a href="#home">⬅ Back</a></li>
+</head>
+
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+  window.location.href = "login.html";
+}
+</script>
+
+<body>
+<div class="aurora-bg"></div>
+
+
+
+<!-- ===== NAVIGATION BAR ===== -->
+<nav>
+  <div class="logo">MyWebsite.</div>
+  <ul>
+    <li><a href="#" onclick="logoutUser()">Logout</a></li>
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#hobby">My Hobby</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#home">⬅ Back</a></li>
+    <li><a href="#" onclick="logoutUser()">Logout</a></li>
+
+  </ul>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="text-box">
+    <h3>Hello, It's Me</h3>
+    <h1>Muhamad Haziq Danial</h1>
+    <h2>And I'm an <span style="color:var(--accent-cyan);">Information Management Student</span></h2>
+    <h2><span style="color:var(--accent-cyan);">2023460416</span></h2>
+    <p>Welcome to my personal portfolio website. Explore my profile to learn more about me! 🖤
+</p>
+  </div>
+  <div class="profile">
+    <img src="haz1.jpg" alt="Haziq Danial">
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <h2>About Me</h2>
+
+
+<div class="bio-table">
+    <table>
+      <tr><th>Name</th><td>Muhamad Haziq Danial Bin Azizul Azri</td></tr>
+      <tr><th>No. Matrix</th><td>2023460416</td></tr>
+      <tr><th>Class</th><td>KCDIM1105A</td></tr>
+      <tr><th>Course</th><td>Diploma In Information Management</td></tr>
+      <tr><th>Date of Birth</th><td>25 August 2005</td></tr>
+      <tr><th>Place of Birth</th><td>Hospital Besar Teluk Intan</td></tr>
+      <tr><th>Address</th><td>Lot 1501, Kampung Tersusun Muhibbah, Batu 3, Jalan Temoh, Perak</td></tr>
+      <tr><th>Hometown</th><td>Tapah, Perak</td></tr>
+      <tr><th>Siblings</th><td>4 (Second child)</td></tr>
+      <tr><th>Primary School</th><td>Sekolah Kebangsaan Satu Tapah</td></tr>
+      <tr><th>Secondary School</th><td>Sekolah Menengah Kebangsaan Buyong Adil</td></tr>
+    </table>
+  </div>
+
+
+
+
+<div class="About-container">
+    <!-- IMAGE -->
+    <div class="project">
+      <img src="Family.jpg" alt="My Family">
+      <h4>My Family</h4>
+      <p>Family photo during Eid.</p>
+    </div>
+
+    <div class="project">
+      <img src="Primary.jpg" alt="Primary School">
+      <h4>Primary School</h4>
+      <p>Won a gold medal in football with the school team.</p>
+    </div>
+
+    <div class="project">
+      <img src="Secondary.jpg" alt="Secondary School">
+      <h4>Secondary School</h4>
+      <p>My batch during school sports day.</p>
+    </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+    <div class="skill-box">
+      <h3>HTML & CSS</h3>
+      <p>Building responsive and elegant websites.</p>
+    </div>
+    <div class="skill-box">
+      <h3>Database Management</h3>
+      <p>Managing and organizing structured information.</p>
+    </div>
+    <div class="skill-box">
+      <h3>Microsoft Office</h3>
+      <p>Proficient in Word, Excel, PowerPoint, and Canva.</p>
+    </div>
+    <div class="skill-box">
+      <h3>Teamwork & Communication</h3>
+      <p>Collaborative and effective interpersonal skills.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOBBY SECTION ===== -->
+<section id="hobby">
+  <h2>My Hobby</h2>
+
+  <div class="hobby-container">
+
+    <!-- IMAGE HOBBIES -->
+    <div class="project">
+      <img src="skate.jpg" alt="Skateboard">
+      <h4>Play Skateboard</h4>
+      <p>I have been skateboarding since I was 11 years old.</p>
+    </div>
+
+    <div class="project">
+      <img src="golf.jpg" alt="Golf">
+      <h4>Golf</h4>
+      <p>Golf teaches patience and focus with every swing.</p>
+    </div>
+
+    <div class="project">
+      <img src="snooker.jpg" alt="Snooker">
+      <h4>Snooker</h4>
+      <p>Snooker challenges my strategy and precision.</p>
+    </div>
+
+<br>
+
+    <!-- ===== AUTOPLAY VIDEO 1: SKATE ===== -->
+    <div class="project">
+      <video autoplay muted loop playsinline>
+        <source src="Skate.mp4" type="video/mp4">
+      </video>
+      <h4>Skateboarding Clip</h4>
+      <p>A short clip of my skateboarding tricks with my friends.</p>
+    </div>
+
+    <!-- ===== AUTOPLAY VIDEO 2: SNOOKER ===== -->
+    <div class="project">
+      <video autoplay muted loop playsinline>
+        <source src="Snooker.mp4" type="video/mp4">
+      </video>
+      <h4>Snooker</h4>
+      <p>A clip of me playing snooker for fun.</p>
+    </div>
+
+    <!-- ===== AUTOPLAY VIDEO 3: GOLF ===== -->
+    <div class="project">
+      <video autoplay muted loop playsinline>
+        <source src="Golf.mp4" type="video/mp4">
+      </video>
+      <h4>Golf Video</h4>
+      <p>A video of me practicing long-range golf shots.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-info">
+    📍 <b>Location: Tapah,Perak, Malaysia<br></b>
+    📞 <b>Phone: +6017-5893107<br></b>
+    📩 <b>Email:haziqdanial3107@gmail.com</b><br>
+  </div>
+</section>
+
+<script>
+function logoutUser() {
+  localStorage.removeItem("loggedIn");
+  window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

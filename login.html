@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | MyPortfolio</title>
+
+<link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+
+<div class="login-container">
+  <h2>Login</h2>
+
+  <input type="text" id="username" placeholder="Enter Username">
+  <input type="password" id="password" placeholder="Enter Password">
+
+  <button onclick="validateLogin()">Login</button>
+
+  <p id="errorMsg">Invalid username or password!</p>
+</div>
+
+<script>
+function validateLogin() {
+  let user = document.getElementById("username").value;
+  let pass = document.getElementById("password").value;
+
+  let correctUser = "haz";  
+  let correctPass = "1234567"; 
+
+  if (user === correctUser && pass === correctPass) {
+    // Save login status
+    localStorage.setItem("loggedIn", "true");
+
+    // Redirect to main website
+    window.location.href = "index.html";
+  } else {
+    document.getElementById("errorMsg").style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>

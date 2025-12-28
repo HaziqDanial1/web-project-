@@ -24,23 +24,26 @@
 
 <script>
 function validateLogin() {
-  let user = document.getElementById("username").value;
-  let pass = document.getElementById("password").value;
+  let user = document.getElementById("username").value.trim();
+  let pass = document.getElementById("password").value.trim();
 
-  let correctUser = "haz";  
-  let correctPass = "1234567"; 
-
-  if (user === correctUser && pass === correctPass) {
+  if (user !== "" && pass !== "") {
     // Save login status
     localStorage.setItem("loggedIn", "true");
+
+    // Save username (optional)
+    localStorage.setItem("username", user);
 
     // Redirect to main website
     window.location.href = "index.html";
   } else {
+    document.getElementById("errorMsg").innerText = "Please enter username and password!";
     document.getElementById("errorMsg").style.display = "block";
   }
 }
 </script>
 
+
 </body>
+
 </html>
